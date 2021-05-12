@@ -10,7 +10,6 @@ import { ListItemsComponent } from './components/list-items/list-items.component
   declarations: [
     AppComponent,
     NavComponent,
-    ListItemsComponent
   ],
   imports: [
     BrowserModule,
