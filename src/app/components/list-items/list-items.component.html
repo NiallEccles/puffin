@@ -1,68 +1,8 @@
 <section>
   <ol>
-    <li>
-      <h2>Groceries to get</h2>
-      <p>Eggs, milk, cheese</p>
-    </li>
-    <li>
-      <h2>Groceries to get</h2>
-      <p>Eggs, milk, cheese</p>
-    </li>
-    <li>
-      <h2>Groceries to get</h2>
-      <p>Eggs, milk, cheese</p>
-    </li>
-    <li>
-      <h2>Groceries to get</h2>
-      <p>Eggs, milk, cheese</p>
-    </li>
-    <li>
-      <h2>Groceries to get</h2>
-      <p>Eggs, milk, cheese</p>
-    </li>
-    <li>
-      <h2>Groceries to get</h2>
-      <p>Eggs, milk, cheese</p>
-    </li>
-    <li>
-      <h2>Groceries to get</h2>
-      <p>Eggs, milk, cheese</p>
-    </li>
-    <li>
-      <h2>Groceries to get</h2>
-      <p>Eggs, milk, cheese</p>
-    </li>
-    <li>
-      <h2>Groceries to get</h2>
-      <p>Eggs, milk, cheese</p>
-    </li>
-    <li>
-      <h2>Groceries to get</h2>
-      <p>Eggs, milk, cheese</p>
-    </li>
-    <li>
-      <h2>Groceries to get</h2>
-      <p>Eggs, milk, cheese</p>
-    </li>
-    <li>
-      <h2>Groceries to get</h2>
-      <p>Eggs, milk, cheese</p>
-    </li>
-    <li>
-      <h2>Groceries to get</h2>
-      <p>Eggs, milk, cheese</p>
-    </li>
-    <li>
-      <h2>Groceries to get</h2>
-      <p>Eggs, milk, cheese</p>
-    </li>
-    <li>
-      <h2>Groceries to get</h2>
-      <p>Eggs, milk, cheese</p>
-    </li>
-    <li>
-      <h2>Groceries to get</h2>
-      <p>Eggs, milk, cheese</p>
+    <li *ngFor="let item of [].constructor(20); let i = index" [ngClass]="{'active': i === activeItemId}" (click)="setActiveItemId(i)">
+        <h2>Groceries to get</h2>
+        <p>Eggs, milk, cheese</p>
     </li>
   </ol>
 </section>
