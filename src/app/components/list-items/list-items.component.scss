@@ -1,0 +1,27 @@
+section {
+    height: 100vh;
+    overflow-y: scroll;
+    border-right: 2px solid black;
+  ol {
+    padding: 1em;
+    margin: 0;
+    padding: 0;
+    li {
+      padding: 1em 2em;
+      list-style: none;
+      &:hover {
+        background: black;
+        color: white;
+      }
+      color: black;
+      h2 {
+        margin: 0;
+        font-family: "Bold";
+      }
+      p {
+        margin: 0;
+        font-family: "Regular";
+      }
+    }
+  }
+}

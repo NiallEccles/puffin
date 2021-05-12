@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url("./assets/NunitoSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url("./assets/NunitoSans-Regular.ttf");
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "nav items edit edit"
+    "nav items edit edit"
+    "nav items edit edit";
+}
+.nav {
+  grid-area: nav;
+}
+.items {
+  grid-area: items;
+}
+.edit {
+  grid-area: edit;
+}
